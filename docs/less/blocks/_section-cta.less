@@ -1,0 +1,87 @@
+.section-cta {
+  position: relative;
+  padding-top: 71px;
+  padding-bottom: 75px;
+  background-color: rgba(76, 162, 126, 0.3);
+  background-image: url("../img/cta/cta-bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 130, 78, 0.7);
+  }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 79px;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    padding-top: 81px;
+    padding-bottom: 91px;
+    background-image: url("../img/cta/cta-bg.jpg");
+  }
+}
+
+.section-cta__content {
+  position: relative;
+  text-align: center;
+}
+
+.section-cta__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 37px;
+  line-height: 1.36;
+
+  span {
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+  }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 53px;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-bottom: 46px;
+  }
+}
+
+.button-plug {
+  padding-top: 20px;
+  padding-right: 42px;
+  padding-bottom: 21px;
+  padding-left: 44px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  color: #2bb279;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  transition: background-color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: darken(#fff, 20%);
+  }
+}

@@ -1,0 +1,155 @@
+.section-tasks {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 44px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(164, 238, 203);
+    width: 69px;
+    height: 69px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    padding-top: 65px;
+    padding-bottom: 38px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    padding-top: 92px;
+    padding-bottom: 22px;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      background-color: rgb(164, 238, 203);
+      width: 131px;
+      height: 131px;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+}
+
+.section-tasks__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 28px;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    padding-left: 100px;
+  }
+}
+
+.section-tasks__content {
+  max-width: 470px;
+  margin-bottom: 50px;
+  text-align: center;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    order: 1;
+    padding-bottom: 75px;
+    margin-bottom: 0;
+    margin-left: 33px;
+    max-width: 380px;
+    text-align: left;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    order: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 95px;
+    max-width: 470px;
+  }
+}
+
+.section-tasks__content-title {
+  margin-bottom: 32px;
+
+    // Медиа запрос для планшетов и выше
+    @media (min-width: 768px) {
+      margin-bottom: 37px;
+    }
+  
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
+}
+
+.section-tasks__content-header {
+  margin-bottom: 34px;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.section-tasks__content-desk {
+  font-weight: 500;
+  font-size: 14px;
+  color: #808080;
+  line-height: 1.72;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    line-height: 2.2;
+  }
+}
+
+.section-tasks__img {
+  max-width: 200px;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 500px) {
+    min-width: 250px;
+  }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    min-width: 270px;
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+    min-width: 356px;
+  }
+}
